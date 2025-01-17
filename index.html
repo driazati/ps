@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Metrics Enhancer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Hero Section -->
+  <header class="bg-blue-600 text-white py-16">
+    <div class="container mx-auto text-center px-6">
+      <h1 class="text-4xl font-bold mb-4">Enhance Your GitHub Pull Requests</h1>
+      <p class="text-lg mb-6">Unlock deeper insights and metrics to streamline your code reviews and improve team collaboration.</p>
+      <a href="#pricing" class="bg-white text-blue-600 font-semibold py-3 px-6 rounded shadow hover:bg-gray-100">Get Started</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">About Our Service</h2>
+      <p class="text-lg text-gray-600">Our platform provides extra metrics for GitHub pull requests, such as detailed activity logs, code complexity analysis, and review efficiency tracking. Designed for teams who want to improve their workflow and ship better code, faster.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Pricing</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Basic Plan -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-4">Basic</h3>
+          <p class="text-gray-600 mb-6">Essential metrics for small teams.</p>
+          <p class="text-3xl font-bold mb-6">$10/month</p>
+          <button disabled class="bg-gray-400 text-white py-2 px-4 rounded">Sign Up</button>
+        </div>
+        <!-- Pro Plan -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-4">Pro</h3>
+          <p class="text-gray-600 mb-6">Advanced analytics for growing teams.</p>
+          <p class="text-3xl font-bold mb-6">$25/month</p>
+          <button disabled class="bg-gray-400 text-white py-2 px-4 rounded">Sign Up</button>
+        </div>
+        <!-- Enterprise Plan -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-4">Enterprise</h3>
+          <p class="text-gray-600 mb-6">Custom solutions for large organizations.</p>
+          <p class="text-3xl font-bold mb-6">Contact us</p>
+          <a href="#contact" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="text-lg text-gray-600 mb-6">Have questions or need a custom solution? Get in touch!</p>
+      <form id="contact-form" class="max-w-md mx-auto">
+        <div class="mb-4">
+          <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+        </div>
+        <div class="mb-4">
+          <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+        </div>
+        <div class="mb-4">
+          <textarea name="message" placeholder="Your Message" rows="5" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+        </div>
+        <button type="button" class="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700">Send Message</button>
+      </form>
+      <p id="form-status" class="mt-4 text-green-600 hidden">Form submitted</p>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 GitHub Metrics Enhancer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('#contact-form button').addEventListener('click', function() {
+      document.querySelector('#form-status').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
